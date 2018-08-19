@@ -4,6 +4,7 @@ from rest_framework import serializers
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django_redis import get_redis_connection
+from celery_tasks.sms.tasks import sms_send
 
 
 class SMSCodeView(APIView):
@@ -40,6 +41,7 @@ class SMSCodeView(APIView):
         redis_cli.setex('sms_code_' + mobile, 300, sms_code)
         redis_cli.setex('sms_flag_' + mobile, 60, 1)
         redis_pl.execute()
-        print(sms_code)
+        # print(sms_code)
+        sms_send.delay(mobile, sms_code, 5, 1)
 
         return Response({'message': 'OK'})

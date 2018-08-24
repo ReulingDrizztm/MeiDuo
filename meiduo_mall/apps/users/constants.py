@@ -1,0 +1,2 @@
+# 以秒为单位
+VERIFY_EMAIL_TOKEN_EXPIRES = 60 * 60 * 24

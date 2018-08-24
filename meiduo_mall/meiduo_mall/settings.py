@@ -9,13 +9,14 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+import datetime
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 import sys
+
 # sys.path-->指定python包的查找路径
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
+    'oauth.apps.OauthConfig',
 ]
 
 MIDDLEWARE = [
@@ -202,6 +204,17 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
+    # def中的身份验证方式,首先选择jwt方式的验证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+# jwt口令的过期时间
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
 # CORS
@@ -214,3 +227,28 @@ CORS_ORIGIN_WHITELIST = (
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
 AUTH_USER_MODEL = 'users.User'
+
+AUTHENTICATION_BACKENDS = [
+    'users.utils.UsernameMobileModelBackend',
+]
+
+# QQ登录参数
+# app_id
+QQ_CLIENT_ID = '101474184'
+# app_key
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+# 网站回调域
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+# 登录成功后默认返回首页
+QQ_STATE = '/'
+
+# 邮箱设置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.126.com'
+EMAIL_PORT = 25
+# 发送邮件的邮箱
+EMAIL_HOST_USER = 'areuling@126.com'
+# 在邮箱中设置的客户端授权密码
+EMAIL_HOST_PASSWORD = 'python180508'
+# 收件人看到的发件人
+EMAIL_FROM = '美多商城<areuling@126.com>'

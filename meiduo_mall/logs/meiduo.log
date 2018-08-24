@@ -3067,3 +3067,278 @@ WARNING 2018-08-19 21:10:54,251 basehttp 124 "POST /users/ HTTP/1.1" 400 8571
 INFO 2018-08-19 21:11:46,438 basehttp 124 "GET /sms_code/13123456781/ HTTP/1.1" 200 16
 INFO 2018-08-19 21:11:46,488 basehttp 124 "GET /mobiles/13123456781/count/ HTTP/1.1" 200 34
 INFO 2018-08-19 21:12:02,809 basehttp 124 "POST /users/ HTTP/1.1" 201 8466
+WARNING 2018-08-21 16:59:10,440 base 152 Not Found: /
+WARNING 2018-08-21 16:59:10,463 basehttp 124 "GET / HTTP/1.1" 404 2650
+WARNING 2018-08-21 16:59:10,841 base 152 Not Found: /favicon.ico
+WARNING 2018-08-21 16:59:10,849 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2701
+WARNING 2018-08-21 16:59:18,058 basehttp 124 "GET /users/ HTTP/1.1" 405 8433
+INFO 2018-08-21 16:59:50,680 basehttp 124 "GET /users HTTP/1.1" 301 0
+WARNING 2018-08-21 16:59:50,744 basehttp 124 "GET /users/ HTTP/1.1" 405 8433
+WARNING 2018-08-21 16:59:56,577 base 152 Not Found: /
+WARNING 2018-08-21 16:59:56,579 basehttp 124 "GET / HTTP/1.1" 404 2650
+INFO 2018-08-21 17:00:43,317 basehttp 124 "GET /sms_code/13123456782 HTTP/1.1" 301 0
+INFO 2018-08-21 17:00:43,508 basehttp 124 "GET /sms_code/13123456782/ HTTP/1.1" 200 5185
+WARNING 2018-08-21 17:01:01,593 basehttp 124 "POST /users/ HTTP/1.1" 400 8575
+INFO 2018-08-21 17:01:46,222 basehttp 124 "GET /sms_code/13123456782/ HTTP/1.1" 200 5185
+ERROR 2018-08-21 17:01:58,259 exceptions 26 [<users.views.UserView object at 0x7f7f98128d30>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-08-21 17:01:58,287 basehttp 124 "POST /users/ HTTP/1.1" 507 8426
+INFO 2018-08-21 17:03:14,479 basehttp 124 "GET /sms_code/13123456782/ HTTP/1.1" 200 5185
+INFO 2018-08-21 17:03:27,526 basehttp 124 "POST /users/ HTTP/1.1" 201 8694
+WARNING 2018-08-21 17:34:00,979 basehttp 124 "GET /users/ HTTP/1.1" 405 8433
+WARNING 2018-08-21 17:34:05,110 base 152 Not Found: /
+WARNING 2018-08-21 17:34:05,132 basehttp 124 "GET / HTTP/1.1" 404 2815
+INFO 2018-08-21 17:34:14,666 basehttp 124 "GET /authorizations HTTP/1.1" 301 0
+WARNING 2018-08-21 17:34:14,708 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+WARNING 2018-08-21 17:35:09,830 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7639
+WARNING 2018-08-21 17:35:47,082 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7637
+INFO 2018-08-21 17:38:02,531 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7706
+WARNING 2018-08-21 17:38:23,145 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+INFO 2018-08-21 17:38:39,594 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7706
+INFO 2018-08-21 17:59:07,685 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7782
+WARNING 2018-08-22 19:15:24,767 base 152 Not Found: /
+WARNING 2018-08-22 19:15:24,792 basehttp 124 "GET / HTTP/1.1" 404 2815
+WARNING 2018-08-22 19:15:25,073 base 152 Not Found: /favicon.ico
+WARNING 2018-08-22 19:15:25,075 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2866
+INFO 2018-08-22 19:15:38,837 basehttp 124 "GET /users HTTP/1.1" 301 0
+WARNING 2018-08-22 19:15:39,379 basehttp 124 "GET /users/ HTTP/1.1" 405 8433
+INFO 2018-08-22 19:15:39,425 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,425 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,450 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,450 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,452 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,454 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,458 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,461 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,468 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,470 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-08-22 19:15:39,771 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-08-22 19:15:50,663 base 152 Not Found: /
+WARNING 2018-08-22 19:15:50,676 basehttp 124 "GET / HTTP/1.1" 404 2815
+INFO 2018-08-22 19:15:59,775 basehttp 124 "GET /authorizations HTTP/1.1" 301 0
+WARNING 2018-08-22 19:15:59,816 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+INFO 2018-08-22 19:16:17,327 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7782
+INFO 2018-08-22 19:16:35,824 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7782
+INFO 2018-08-22 20:55:04,114 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2018-08-22 20:55:56,254 base 152 Not Found: /qq/authorizations/
+WARNING 2018-08-22 20:55:56,257 basehttp 124 "GET /qq/authorizations/ HTTP/1.1" 404 2994
+WARNING 2018-08-22 20:56:11,127 basehttp 124 "GET /users/ HTTP/1.1" 405 8433
+WARNING 2018-08-22 20:56:17,656 base 152 Not Found: /
+WARNING 2018-08-22 20:56:17,664 basehttp 124 "GET / HTTP/1.1" 404 2922
+WARNING 2018-08-22 20:56:35,598 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7589
+WARNING 2018-08-22 20:57:16,877 base 152 Not Found: /
+WARNING 2018-08-22 20:57:16,897 basehttp 124 "GET / HTTP/1.1" 404 2922
+WARNING 2018-08-22 20:57:23,866 base 152 Not Found: /oauth
+WARNING 2018-08-22 20:57:23,878 basehttp 124 "GET /oauth HTTP/1.1" 404 2955
+WARNING 2018-08-22 20:57:41,548 base 152 Not Found: /oauth/
+WARNING 2018-08-22 20:57:41,559 basehttp 124 "GET /oauth/ HTTP/1.1" 404 3024
+INFO 2018-08-22 20:57:53,014 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 200 5643
+WARNING 2018-08-22 21:30:46,089 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-08-22 21:30:46,093 basehttp 124 "GET /oauth/qq/user/?code=6EDC8C02B6CFF9894C813D1BF49D4FB0 HTTP/1.1" 404 3092
+INFO 2018-08-22 22:26:57,686 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2018-08-22 22:27:07,451 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-08-22 22:27:07,460 basehttp 124 "GET /oauth/qq/user/?code=21E87C3147D50EB543DF3326CADAF011 HTTP/1.1" 404 3092
+WARNING 2018-08-22 22:27:20,341 base 152 Not Found: /oauth/qq/user/
+WARNING 2018-08-22 22:27:20,356 basehttp 124 "GET /oauth/qq/user/?code=21E87C3147D50EB543DF3326CADAF011 HTTP/1.1" 404 3092
+WARNING 2018-08-22 22:27:55,008 base 152 Not Found: /
+WARNING 2018-08-22 22:27:55,026 basehttp 124 "GET / HTTP/1.1" 404 2922
+WARNING 2018-08-22 22:28:06,711 base 152 Not Found: /oauth
+WARNING 2018-08-22 22:28:06,723 basehttp 124 "GET /oauth HTTP/1.1" 404 2955
+WARNING 2018-08-22 22:28:21,304 base 152 Not Found: /oauth/authorizations/
+WARNING 2018-08-22 22:28:21,316 basehttp 124 "GET /oauth/authorizations/ HTTP/1.1" 404 3069
+WARNING 2018-08-22 22:28:30,012 base 152 Not Found: /oauth/authorizations/qq/authorization/
+WARNING 2018-08-22 22:28:30,027 basehttp 124 "GET /oauth/authorizations/qq/authorization/ HTTP/1.1" 404 3120
+WARNING 2018-08-22 22:29:42,260 base 152 Not Found: /oauth/authorizations/
+WARNING 2018-08-22 22:29:42,270 basehttp 124 "GET /oauth/authorizations/ HTTP/1.1" 404 3233
+WARNING 2018-08-22 22:29:53,698 base 152 Not Found: /oauth/authorizations/qq/user/
+WARNING 2018-08-22 22:29:53,709 basehttp 124 "GET /oauth/authorizations/qq/user/ HTTP/1.1" 404 3257
+WARNING 2018-08-22 22:30:18,900 base 152 Not Found: /
+WARNING 2018-08-22 22:30:18,908 basehttp 124 "GET / HTTP/1.1" 404 2922
+INFO 2018-08-22 22:30:27,006 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-08-22 22:30:37,702 basehttp 124 "GET /oauth/qq/user/?code=1F77124D32D011BF38A2508A1EA209F4 HTTP/1.1" 200 190
+WARNING 2018-08-22 22:30:37,710 base 152 Not Found: /image_code/37d81b39-5c3f-4e14-add4-21b7ce123013/
+WARNING 2018-08-22 22:30:37,712 basehttp 124 "GET /image_code/37d81b39-5c3f-4e14-add4-21b7ce123013/ HTTP/1.1" 404 3090
+INFO 2018-08-22 22:32:07,157 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-08-22 22:32:16,155 basehttp 124 "GET /oauth/qq/user/?code=3236653CAA3018EEFDF08F2C593245D5 HTTP/1.1" 200 190
+INFO 2018-08-22 22:33:29,811 basehttp 124 "GET /sms_code/13123456782/ HTTP/1.1" 200 16
+INFO 2018-08-22 22:33:38,489 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-08-22 22:33:38,493 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Resource/MeiDuo/meiduo_mall/apps/oauth/views.py", line 75, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Resource/MeiDuo/meiduo_mall/apps/oauth/serializers.py", line 49, in validate
+    redis_conn = get_redis_connection('verify_codes')
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-08-22 22:33:38,608 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19190
+INFO 2018-08-22 22:33:49,439 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-08-22 22:33:49,445 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Resource/MeiDuo/meiduo_mall/apps/oauth/views.py", line 75, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Resource/MeiDuo/meiduo_mall/apps/oauth/serializers.py", line 49, in validate
+    redis_conn = get_redis_connection('verify_codes')
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-08-22 22:33:49,501 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19247
+INFO 2018-08-22 22:35:46,198 basehttp 124 "GET /sms_code/13123456782/ HTTP/1.1" 200 16
+INFO 2018-08-22 22:35:55,498 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 211
+INFO 2018-08-24 15:18:53,600 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-08-24 15:18:53,738 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-08-24 15:18:59,977 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-08-24 15:19:00,012 base 152 Not Found: /user/
+WARNING 2018-08-24 15:19:00,013 basehttp 124 "GET /user/ HTTP/1.1" 404 2961
+INFO 2018-08-24 15:21:55,720 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-08-24 15:21:55,725 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 15:21:55,739 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 15:21:55,743 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
+WARNING 2018-08-24 16:23:08,427 base 152 Not Found: /
+WARNING 2018-08-24 16:23:08,429 basehttp 124 "GET / HTTP/1.1" 404 3234
+WARNING 2018-08-24 16:23:08,565 base 152 Not Found: /favicon.ico
+WARNING 2018-08-24 16:23:08,566 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3285
+WARNING 2018-08-24 16:23:37,096 basehttp 124 "GET /emails/ HTTP/1.1" 401 3664
+INFO 2018-08-24 17:22:38,329 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 17:22:38,400 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+INFO 2018-08-24 17:22:38,403 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 17:22:38,408 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 17:22:38,411 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 17:22:57,178 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+WARNING 2018-08-24 17:22:57,183 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 17:22:57,185 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 17:45:42,377 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 17:45:42,583 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 17:57:28,711 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 17:57:28,798 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2018-08-24 17:57:28,803 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 17:57:28,817 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 17:57:28,817 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 17:57:31,638 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 17:57:31,768 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2018-08-24 17:58:11,716 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+WARNING 2018-08-24 17:58:11,763 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 17:58:11,764 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 17:58:13,999 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 17:58:54,426 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 17:58:54,432 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTEwOTMsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTA0NjkzfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.RcXMts-BZgMJG6TC_WLZSVfTOm0r577ncDibshYcY8o HTTP/1.1" 404 3490
+WARNING 2018-08-24 18:01:28,026 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:01:28,028 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTEwOTMsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTA0NjkzfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.RcXMts-BZgMJG6TC_WLZSVfTOm0r577ncDibshYcY8o HTTP/1.1" 404 3490
+WARNING 2018-08-24 18:01:32,318 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:01:32,318 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTEwOTMsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTA0NjkzfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.RcXMts-BZgMJG6TC_WLZSVfTOm0r577ncDibshYcY8o HTTP/1.1" 404 3490
+INFO 2018-08-24 18:01:49,520 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+WARNING 2018-08-24 18:01:49,529 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 18:01:49,529 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 18:01:50,311 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 18:02:03,070 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:02:03,071 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDQ5MTAsImV4cCI6MTUzNTE5MTMxMCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.yKZEpYsjvMZjxtxS_oOWJbtG990_uX0RJUmmWyrD-hQ HTTP/1.1" 404 3490
+INFO 2018-08-24 18:03:01,677 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-08-24 18:03:01,813 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-08-24 18:03:06,931 basehttp 124 "GET /user/ HTTP/1.1" 200 85
+WARNING 2018-08-24 18:03:06,982 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 18:03:06,982 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 18:03:24,076 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 18:03:27,561 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:03:27,566 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDQ5MTAsImV4cCI6MTUzNTE5MTMxMCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.yKZEpYsjvMZjxtxS_oOWJbtG990_uX0RJUmmWyrD-hQ HTTP/1.1" 404 3490
+WARNING 2018-08-24 18:07:16,253 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:07:16,254 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDQ5MTAsImV4cCI6MTUzNTE5MTMxMCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.yKZEpYsjvMZjxtxS_oOWJbtG990_uX0RJUmmWyrD-hQ HTTP/1.1" 404 3490
+WARNING 2018-08-24 18:07:27,866 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 18:07:27,866 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDUwMDQsImV4cCI6MTUzNTE5MTQwNCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.fqJ4QWKw-QPfJhwJ-cuetk0L78GCrWOnbHoOjot26Xo HTTP/1.1" 404 3490
+INFO 2018-08-24 18:08:13,281 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 18:08:13,382 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2018-08-24 18:08:13,390 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 18:08:13,403 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 18:08:13,403 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+WARNING 2018-08-24 19:11:27,669 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:11:27,675 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDUwMDQsImV4cCI6MTUzNTE5MTQwNCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.fqJ4QWKw-QPfJhwJ-cuetk0L78GCrWOnbHoOjot26Xo HTTP/1.1" 404 3490
+WARNING 2018-08-24 19:11:58,590 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:11:58,593 basehttp 124 "GET /emails/verification/?token=eyJpYXQiOjE1MzUxMDUwMDQsImV4cCI6MTUzNTE5MTQwNCwiYWxnIjoiSFMyNTYifQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.fqJ4QWKw-QPfJhwJ-cuetk0L78GCrWOnbHoOjot26Xo HTTP/1.1" 404 3490
+INFO 2018-08-24 19:17:35,724 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 19:17:35,774 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2018-08-24 19:17:35,779 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 19:17:35,792 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:17:35,796 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 19:17:38,317 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 19:17:38,449 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 19:18:37,229 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:18:37,229 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImV4cCI6MTUzNTE5NTg1OCwiaWF0IjoxNTM1MTA5NDU4fQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.-SEXHly-11iwn2H7XKtZ_zewOMwKx3KQA5fsNdjDAQ8 HTTP/1.1" 404 3490
+INFO 2018-08-24 19:24:13,783 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-24 19:24:13,965 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2018-08-24 19:24:13,972 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-24 19:24:13,984 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:24:13,984 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 19:24:17,139 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-08-24 19:24:17,229 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 19:26:50,417 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:26:50,419 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImV4cCI6MTUzNTE5NjI1NywiaWF0IjoxNTM1MTA5ODU3fQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.uG-bSFDfSwriRJlfM7YAmYgrs750lei7v1STUQss9Ec HTTP/1.1" 404 3490
+INFO 2018-08-24 19:26:57,900 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+WARNING 2018-08-24 19:26:57,908 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:26:57,911 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+WARNING 2018-08-24 19:27:43,911 base 152 Not Found: /
+WARNING 2018-08-24 19:27:43,917 basehttp 124 "GET / HTTP/1.1" 404 3234
+WARNING 2018-08-24 19:27:44,017 base 152 Not Found: /favicon.ico
+WARNING 2018-08-24 19:27:44,029 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3285
+INFO 2018-08-24 19:28:49,313 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+WARNING 2018-08-24 19:28:49,336 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:28:49,337 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 19:28:56,063 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+WARNING 2018-08-24 19:29:16,920 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:29:16,920 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTY1MzYsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTEwMTM2fQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.W2M3HTM95x3vXUJYOd7Z2z_cjuw-m6ifTBQjFtDComQ HTTP/1.1" 404 3490
+WARNING 2018-08-24 19:30:16,408 base 152 Not Found: /emails/verification/
+WARNING 2018-08-24 19:30:16,412 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTY1MzYsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTEwMTM2fQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.W2M3HTM95x3vXUJYOd7Z2z_cjuw-m6ifTBQjFtDComQ HTTP/1.1" 404 3490
+INFO 2018-08-24 19:30:16,569 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+WARNING 2018-08-24 19:30:16,593 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:30:16,594 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3309
+INFO 2018-08-24 19:31:07,999 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTY1MzYsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTEwMTM2fQ.eyJ1c2VyX2lkIjozLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.W2M3HTM95x3vXUJYOd7Z2z_cjuw-m6ifTBQjFtDComQ HTTP/1.1" 200 16
+INFO 2018-08-24 19:31:14,805 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+WARNING 2018-08-24 19:31:14,860 base 152 Not Found: /browse_histories/
+WARNING 2018-08-24 19:31:14,862 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3479
+INFO 2018-08-24 19:32:06,467 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1MzUxOTEwOTMsImFsZyI6IkhTMjU2IiwiaWF0IjoxNTM1MTA0NjkzfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFyZXVsaW5nQDEyNi5jb20ifQ.RcXMts-BZgMJG6TC_WLZSVfTOm0r577ncDibshYcY8o HTTP/1.1" 200 16
+WARNING 2018-08-24 19:35:57,591 base 152 Not Found: /areas/
+INFO 2018-08-24 19:35:57,593 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2018-08-24 19:35:57,598 basehttp 124 "GET /areas/ HTTP/1.1" 404 3446
+WARNING 2018-08-24 19:35:57,620 base 152 Not Found: /addresses/
+WARNING 2018-08-24 19:35:57,620 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3458

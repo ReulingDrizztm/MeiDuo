@@ -2,14 +2,19 @@ import re
 
 from django_redis import get_redis_connection
 from rest_framework import serializers
+from rest_framework_jwt.settings import api_settings
+from celery_tasks.email.tasks import send_verify_email
 
 from users.models import User
 
 
 class UserCreateSerializer(serializers.Serializer):
+    """
+    创建用户序列化器
+    """
     id = serializers.IntegerField(read_only=True)
     username = serializers.CharField(
-        min_length=5,
+        # min_length=5,
         max_length=20,
         error_messages={
             'min_length': '用户名不能少于5个字符',
@@ -30,7 +35,12 @@ class UserCreateSerializer(serializers.Serializer):
     sms_code = serializers.CharField(write_only=True)
     allow = serializers.CharField(write_only=True)
 
+    # 增加token字段
+    token = serializers.CharField(label='登录状态token', read_only=True)
+
     def validate_username(self, value):
+        # if not re.search(r'[a-zA-Z]', value):
+        #     raise serializers.ValidationError('用户名必须包含字母')
         # 验证用户名是否存在
         count = User.objects.filter(username=value).count()
         if count > 0:
@@ -86,8 +96,52 @@ class UserCreateSerializer(serializers.Serializer):
     def create(self, validated_data):
         user = User()
         user.username = validated_data.get('username')
-        user.moblie = validated_data.get('mobile')
+        user.mobile = validated_data.get('mobile')
         user.set_password(validated_data.get('password'))
         user.save()
 
+        # 补充生成记录登录状态的token
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        user.token = token
+
         return user
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    """
+    用户详细信息序列化器
+    """
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'mobile', 'email', 'email_active')
+
+
+class EmailSerializer(serializers.ModelSerializer):
+    """
+    邮箱序列化器
+    """
+
+    class Meta:
+        model = User
+        fields = ('id', 'email')
+        extra_kwargs = {
+            'email': {
+                'required': True
+            }
+        }
+
+    def update(self, instance, validated_data):
+        email = validated_data['email']
+        instance.email = validated_data['email']
+        instance.save()
+
+        # 生成验证链接
+        verify_url = instance.generate_verify_email_url()
+        # 发送验证邮件
+        send_verify_email.delay(email, verify_url)
+
+        return instance

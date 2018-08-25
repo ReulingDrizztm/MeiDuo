@@ -3358,3 +3358,11 @@ INFO 2018-08-24 22:34:13,693 basehttp 124 "GET /areas/510100/ HTTP/1.1" 200 707
 INFO 2018-08-24 22:34:40,586 basehttp 124 "POST /addresses/ HTTP/1.1" 201 242
 INFO 2018-08-24 22:34:49,258 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
 INFO 2018-08-24 22:34:49,341 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 200 16
+INFO 2018-08-25 20:29:28,722 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-08-25 20:29:28,785 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2018-08-25 20:29:42,347 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-08-25 20:29:42,801 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 233
+INFO 2018-08-25 20:29:43,125 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-25 20:29:43,133 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-25 20:29:43,160 base 152 Not Found: /browse_histories/
+WARNING 2018-08-25 20:29:43,167 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 6761

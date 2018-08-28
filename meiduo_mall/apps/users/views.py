@@ -1,11 +1,15 @@
+from django_redis import get_redis_connection
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+
+from goods.models import SKU
+from goods.serializers import SKUSerializer
 from .models import User
 from rest_framework.generics import CreateAPIView, RetrieveAPIView, UpdateAPIView
-from .serializers import UserCreateSerializer, EmailSerializer
-from rest_framework.mixins import CreateModelMixin,UpdateModelMixin
+from .serializers import UserCreateSerializer, EmailSerializer, AddUserBrowsingHistorySerializer
+from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework.decorators import action
 from rest_framework.viewsets import GenericViewSet
 from . import constants
@@ -78,6 +82,7 @@ class UserDetailView(RetrieveAPIView):
         return self.request.user
 
 
+# 发送邮件
 class EmailView(UpdateAPIView):
     """
     保存用户邮箱
@@ -89,6 +94,7 @@ class EmailView(UpdateAPIView):
         return self.request.user
 
 
+# 邮箱验证
 class VerifyEmailView(APIView):
     """
     邮箱验证
@@ -110,6 +116,7 @@ class VerifyEmailView(APIView):
             return Response({'message': 'OK'})
 
 
+# 收货地址
 class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
     """
     用户地址新增与修改
@@ -183,3 +190,23 @@ class AddressViewSet(CreateModelMixin, UpdateModelMixin, GenericViewSet):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
+
+
+# 浏览记录
+class UserBrowsingHistoryView(CreateAPIView):
+    serializer_class = AddUserBrowsingHistorySerializer
+    # 登录判断
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        # 查询Redis，读取最近浏览记录
+        redis_cli = get_redis_connection('history')
+        # 获取当前用户所有浏览记录，返回列表[1,2,3,4]
+        sku_ids = redis_cli.lrange('history%d' % request.user.id, 0, -1)
+        # 查询商品对象
+        skus = []
+        for sku_id in sku_ids:
+            skus.append(SKU.objects.get(pk=sku_id))
+        # 输出json
+        sku_serializer = SKUSerializer(skus, many=True)
+        return Response(sku_serializer.data)

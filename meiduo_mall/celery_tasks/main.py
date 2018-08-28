@@ -14,5 +14,6 @@ app.config_from_object(config)
 # 自动注册celery任务
 app.autodiscover_tasks([
     'celery_tasks.sms',
-    'celery_tasks.email'
+    'celery_tasks.email',
+    'celery_tasks.html',
 ])

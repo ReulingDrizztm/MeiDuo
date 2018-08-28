@@ -3,6 +3,7 @@ from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from celery_tasks.email.tasks import send_verify_email
+from goods.models import SKU
 from .models import Address
 from users.models import User
 
@@ -181,6 +182,46 @@ class AddressTitleSerializer(serializers.ModelSerializer):
     """
     地址标题
     """
+
     class Meta:
         model = Address
         fields = ('title',)
+
+
+class AddUserBrowsingHistorySerializer(serializers.Serializer):
+    sku_id = serializers.IntegerField(min_value=1)
+
+    def validate_sku_id(self, value):
+        try:
+            SKU.objects.get(pk=value)
+        except:
+            raise serializers.ValidationError('商品编号无效')
+        return value
+
+    def create(self, validated_data):
+        # 将来序列化器使用时，保存会调用这个方法
+        # 将浏览记录保存到Redis中，使用list类型
+        redis_cli = get_redis_connection('history')
+        # self.context是一个字典，当视图调用序列化器时，会通过这个字典传递数据
+        # 默认传递了request对象
+        request = self.context.get('request')
+
+        # 当jwt进行登录验证后，会将登录的用户对象user赋值给request对象:request.user=user
+        user = request.user
+        key = 'history%d' % user.id
+        # 获取商品编号
+        sku_id = validated_data.get('sku_id')
+        # #先删除当前编号
+        # redis_cli.lrem(key,0,sku_id)
+        # # 存入redis中，放在最前
+        # redis_cli.lpush(key, sku_id)
+        # #截取，最多只留5个
+        # redis_cli.ltrim(key,0,4)
+        # 使用管道进行优化，只与redis交互一次
+        pl = redis_cli.pipeline()
+        pl.lrem(key, 0, sku_id)
+        pl.lpush(key, sku_id)
+        pl.ltrim(key, 0, 4)
+        pl.execute()
+
+        return validated_data

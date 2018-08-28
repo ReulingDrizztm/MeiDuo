@@ -3561,3 +3561,576 @@ INFO 2018-08-27 22:40:24,778 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
 INFO 2018-08-27 22:40:30,493 basehttp 124 "POST /admin/goods/goodscategory/1/change/?_changelist_filters=p%3D5 HTTP/1.1" 302 0
 INFO 2018-08-27 22:40:30,644 basehttp 124 "GET /admin/goods/goodscategory/?p=5 HTTP/1.1" 200 15961
 INFO 2018-08-27 22:40:30,714 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 00:32:56,685 basehttp 124 "GET / HTTP/1.1" 200 5230
+INFO 2018-08-28 00:33:06,843 basehttp 124 "GET / HTTP/1.1" 200 5230
+WARNING 2018-08-28 00:33:11,796 base 152 Not Found: /list
+WARNING 2018-08-28 00:33:11,807 basehttp 124 "GET /list HTTP/1.1" 404 8244
+WARNING 2018-08-28 00:34:01,563 base 152 Not Found: /categories/
+WARNING 2018-08-28 00:34:01,575 basehttp 124 "GET /categories/ HTTP/1.1" 404 8265
+WARNING 2018-08-28 00:34:17,648 base 152 Not Found: /categories/115
+WARNING 2018-08-28 00:34:17,661 basehttp 124 "GET /categories/115 HTTP/1.1" 404 8274
+INFO 2018-08-28 00:34:29,793 basehttp 124 "GET /categories/115/skus/ HTTP/1.1" 200 9333
+INFO 2018-08-28 00:34:29,864 basehttp 124 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2018-08-28 00:34:41,393 basehttp 124 "GET /categories/115/skus/?page=2 HTTP/1.1" 200 9618
+INFO 2018-08-28 00:35:13,572 basehttp 124 "GET /categories/115/skus/?page=2&page_size=10 HTTP/1.1" 200 10350
+INFO 2018-08-28 17:33:53,255 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 17:33:53,277 base 152 Not Found: /cart/
+WARNING 2018-08-28 17:33:53,278 base 152 Not Found: /categories/115/
+WARNING 2018-08-28 17:33:53,279 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8277
+WARNING 2018-08-28 17:33:53,289 basehttp 124 "GET /cart/ HTTP/1.1" 404 8247
+INFO 2018-08-28 17:33:53,801 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-28 17:33:56,311 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 17:33:56,440 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 17:33:56,470 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 17:34:48,398 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 17:34:48,419 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 17:34:54,104 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 17:34:54,115 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+INFO 2018-08-28 17:52:43,273 basehttp 124 "GET /admin/ HTTP/1.1" 200 10559
+WARNING 2018-08-28 17:52:43,734 base 152 Not Found: /favicon.ico
+WARNING 2018-08-28 17:52:43,742 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8265
+INFO 2018-08-28 17:52:47,501 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 8576
+INFO 2018-08-28 17:52:47,826 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:52:52,441 basehttp 124 "GET /admin/goods/sku/16/change/ HTTP/1.1" 200 34196
+INFO 2018-08-28 17:52:52,634 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:53:33,532 basehttp 124 "POST /admin/goods/sku/16/change/ HTTP/1.1" 302 0
+INFO 2018-08-28 17:53:33,872 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 8822
+INFO 2018-08-28 17:53:34,187 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:54:05,786 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-08-28 17:54:07,693 basehttp 124 "GET /admin/ HTTP/1.1" 200 10624
+INFO 2018-08-28 17:54:14,023 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 8576
+INFO 2018-08-28 17:54:14,097 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:54:15,448 basehttp 124 "GET /admin/goods/sku/16/change/ HTTP/1.1" 200 34196
+INFO 2018-08-28 17:54:15,550 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:54:22,117 basehttp 124 "POST /admin/goods/sku/16/change/ HTTP/1.1" 302 0
+INFO 2018-08-28 17:54:22,694 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 8822
+INFO 2018-08-28 17:54:22,917 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-08-28 17:55:27,044 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 17:55:27,224 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 17:55:27,230 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+INFO 2018-08-28 19:04:17,303 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 19:04:17,436 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:17,443 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 19:04:29,890 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:29,894 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 19:04:35,815 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:35,832 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 19:04:43,661 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:43,666 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 19:04:48,787 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:48,804 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+WARNING 2018-08-28 19:04:52,137 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 19:04:52,157 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8299
+INFO 2018-08-28 20:10:56,871 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:10:56,922 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2018-08-28 20:11:12,783 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:11:13,068 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 233
+INFO 2018-08-28 20:11:13,494 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:11:13,497 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:11:13,597 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:11:37,080 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:11:37,121 base 152 Not Found: /categories/115/
+WARNING 2018-08-28 20:11:37,131 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8444
+WARNING 2018-08-28 20:11:37,145 base 152 Not Found: /cart/
+WARNING 2018-08-28 20:11:37,151 basehttp 124 "GET /cart/ HTTP/1.1" 404 8414
+INFO 2018-08-28 20:11:37,224 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-28 20:11:41,046 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:11:41,135 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 20:11:41,137 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8466
+WARNING 2018-08-28 20:11:46,942 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 20:11:46,947 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8466
+INFO 2018-08-28 20:11:50,217 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:11:50,365 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:14:33,334 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:14:33,558 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:14:33,575 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:14:33,695 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:30:18,709 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:30:18,720 base 152 Not Found: /categories/115/
+WARNING 2018-08-28 20:30:18,732 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8444
+WARNING 2018-08-28 20:30:18,741 base 152 Not Found: /cart/
+WARNING 2018-08-28 20:30:18,753 basehttp 124 "GET /cart/ HTTP/1.1" 404 8414
+INFO 2018-08-28 20:30:18,842 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-28 20:30:22,500 basehttp 124 "OPTIONS /user/browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:30:22,582 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 20:30:22,586 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8466
+WARNING 2018-08-28 20:37:07,149 base 152 Not Found: /user/browse_histories/
+WARNING 2018-08-28 20:37:07,160 basehttp 124 "POST /user/browse_histories/ HTTP/1.1" 404 8466
+INFO 2018-08-28 20:37:08,787 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:37:09,003 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:37:09,015 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:37:09,115 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:55:31,762 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:55:31,945 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:55:31,947 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:55:31,981 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:55:32,029 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:55:32,036 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 20:55:32,055 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:55:32,102 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-08-28 20:55:43,660 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:55:43,682 base 152 Not Found: /categories/115/
+WARNING 2018-08-28 20:55:43,704 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8444
+WARNING 2018-08-28 20:55:43,714 base 152 Not Found: /cart/
+WARNING 2018-08-28 20:55:43,716 basehttp 124 "GET /cart/ HTTP/1.1" 404 8414
+INFO 2018-08-28 20:55:43,733 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+ERROR 2018-08-28 20:55:45,419 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:55:45,565 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+INFO 2018-08-28 20:55:47,254 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:55:47,335 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 238
+WARNING 2018-08-28 20:56:54,338 base 152 Not Found: /categories/115/
+INFO 2018-08-28 20:56:54,341 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 20:56:54,356 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8444
+WARNING 2018-08-28 20:56:54,375 base 152 Not Found: /cart/
+WARNING 2018-08-28 20:56:54,382 basehttp 124 "GET /cart/ HTTP/1.1" 404 8414
+INFO 2018-08-28 20:56:54,477 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+ERROR 2018-08-28 20:56:56,279 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:56:56,326 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+ERROR 2018-08-28 20:57:02,253 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:57:02,288 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+ERROR 2018-08-28 20:57:10,169 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:57:10,265 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+ERROR 2018-08-28 20:57:14,364 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:57:14,407 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+INFO 2018-08-28 20:57:16,956 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:57:17,017 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1183
+ERROR 2018-08-28 20:57:36,644 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 20:57:36,685 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+INFO 2018-08-28 20:57:39,362 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 20:57:39,448 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1183
+INFO 2018-08-28 21:44:45,031 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-08-28 21:44:45,073 base 152 Not Found: /categories/115/
+WARNING 2018-08-28 21:44:45,086 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8444
+WARNING 2018-08-28 21:44:45,106 base 152 Not Found: /cart/
+WARNING 2018-08-28 21:44:45,113 basehttp 124 "GET /cart/ HTTP/1.1" 404 8414
+INFO 2018-08-28 21:44:45,171 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2018-08-28 21:44:47,470 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2018-08-28 21:44:47,641 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 21:44:47,698 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22183
+INFO 2018-08-28 22:16:25,029 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2018-08-28 22:16:25,244 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 22:16:25,328 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22182
+ERROR 2018-08-28 22:16:45,319 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 22:16:45,345 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22182
+INFO 2018-08-28 22:18:43,835 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 22:18:44,004 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 22:18:44,088 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1159
+ERROR 2018-08-28 22:18:51,082 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'sku_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/py3_django/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_id` on serializer `AddUserBrowsingHistorySerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'sku_id'.
+ERROR 2018-08-28 22:18:51,108 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22182
+INFO 2018-08-28 22:18:57,446 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1159
+INFO 2018-08-28 23:20:08,937 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 23:20:09,476 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-08-28 23:20:09,653 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-08-28 23:20:09,802 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-08-28 23:20:09,819 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-08-28 23:20:09,914 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1158

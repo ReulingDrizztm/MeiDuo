@@ -5,9 +5,11 @@
 import sys
 
 sys.path.insert(0, '../')
+
 import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "meiduo_mall.settings")
+
 import django
 
 django.setup()

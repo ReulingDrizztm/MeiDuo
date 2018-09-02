@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework_jwt.views import ObtainJSONWebToken
 from goods.models import SKU
 from goods.serializers import SKUSerializer
 from .models import User
@@ -12,6 +12,7 @@ from .serializers import UserCreateSerializer, EmailSerializer, AddUserBrowsingH
 from rest_framework.mixins import CreateModelMixin, UpdateModelMixin
 from rest_framework.decorators import action
 from rest_framework.viewsets import GenericViewSet
+from carts.utils import merge_cart_cookie2redis
 from . import constants
 from . import serializers
 from .serializers import UserAddressSerializer
@@ -210,3 +211,21 @@ class UserBrowsingHistoryView(CreateAPIView):
         # 输出json
         sku_serializer = SKUSerializer(skus, many=True)
         return Response(sku_serializer.data)
+
+
+# 登录时合并cookie中的购物车数据到redis中
+class UserWebTokenView(ObtainJSONWebToken):
+    """
+    登录时合并cookie到redis中
+    """
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        # 如果登录失败,直接返回响应结果
+        if 'user_id' not in response.data:
+            return response
+
+        # 登录成功,进行数据合并
+        user_id = response.data.get('user_id')
+        response = merge_cart_cookie2redis(request, response, user_id)
+
+        return response

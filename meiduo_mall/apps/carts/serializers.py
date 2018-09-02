@@ -14,7 +14,7 @@ class CartSerializer(serializers.Serializer):
         try:
             SKU.objects.get(pk=value)
         except:
-            raise serializers.ValidationError('购物车空空如也')
+            raise serializers.ValidationError('购物车是空的')
         return value
 
 
@@ -34,7 +34,7 @@ class CartDeleteSerializer(serializers.Serializer):
         try:
             SKU.objects.get(pk=value)
         except:
-            raise serializers.ValidationError('商品编号无效')
+            raise serializers.ValidationError('该商品不存在')
         return value
 
 

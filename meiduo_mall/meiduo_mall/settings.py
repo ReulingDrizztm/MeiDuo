@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'django_crontab',  # 定时任务
     'haystack',
     'carts.apps.CartsConfig',
+    'orders.apps.OrdersConfig',
+    'payments.apps.PaymentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -328,3 +330,15 @@ HAYSTACK_CONNECTIONS = {
 
 # 当添加、修改、删除数据时，自动生成索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# # 支付宝
+ALIPAY_APPID = "2016091700529501"
+ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do?"
+ALIPAY_DEBUG = True
+RETURN_URL = 'http://www.meiduo.site:8080/pay_success.html'
+
+# 支付宝
+# ALIPAY_APPID = "2016082100304973"
+# ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do?"
+# ALIPAY_DEBUG = True  # 如果使用沙箱测试，则设置成True
+# RETURN_URL = 'http://www.meiduo.site:8080/pay_success.html'  # 支付成功后的地址

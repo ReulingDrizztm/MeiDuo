@@ -260,9 +260,9 @@ AUTHENTICATION_BACKENDS = [
 
 # QQ登录参数
 # app_id
-QQ_CLIENT_ID = '101474184'
+QQ_CLIENT_ID = ''
 # app_key
-QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+QQ_CLIENT_SECRET = ''
 # 网站回调域
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 # 登录成功后默认返回首页
@@ -273,11 +273,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.126.com'
 EMAIL_PORT = 25
 # 发送邮件的邮箱
-EMAIL_HOST_USER = 'areuling@126.com'
+EMAIL_HOST_USER = ''
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'python180508'
+EMAIL_HOST_PASSWORD = ''
 # 收件人看到的发件人
-EMAIL_FROM = '美多商城<areuling@126.com>'
+EMAIL_FROM = '美多商城<>'
 
 # DRF扩展
 REST_FRAMEWORK_EXTENSIONS = {
@@ -332,13 +332,13 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # # 支付宝
-ALIPAY_APPID = "2016091700529501"
+ALIPAY_APPID = ""
 ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do?"
 ALIPAY_DEBUG = True
 RETURN_URL = 'http://www.meiduo.site:8080/pay_success.html'
 
 # 支付宝
-# ALIPAY_APPID = "2016082100304973"
+# ALIPAY_APPID = ""
 # ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do?"
 # ALIPAY_DEBUG = True  # 如果使用沙箱测试，则设置成True
 # RETURN_URL = 'http://www.meiduo.site:8080/pay_success.html'  # 支付成功后的地址
